@@ -1,0 +1,13 @@
+Requirements:
+-------------
+-register container by number 
+
+-track this container where is it now (Google maps or other)
+
+API feeds the data to the services
+- register container
+- where is container
+- where has been, or GPS coordinates
+
+
+Final: 08:00 PM
