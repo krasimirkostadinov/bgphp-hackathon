@@ -1,0 +1,21 @@
+{
+  "name": "hackaton-client",
+  "version": "1.0.0",
+  "authors": [
+    "Todor Gospodinov <gospodinov.web@gmail.com>"
+  ],
+  "description": "hackaton client",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flatstrap": "~3.3.1",
+    "knockout": "~3.3.0",
+    "knockout-mapping": "~2.4.1"
+  }
+}
