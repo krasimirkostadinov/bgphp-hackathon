@@ -1,6 +1,11 @@
 //maps api key
 //
 
+var model = {
+
+};
+
+
 var map;
 
 function initMap() {
@@ -10,7 +15,6 @@ function initMap() {
     });
 }
 
-$(document).ready(function(){
-
-
+$(document).ready(function () {
+    ko.applyBindings(ko.mapping.fromJS(window.model, document.getElementById('sidenav')));
 });
