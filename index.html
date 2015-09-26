@@ -8,7 +8,8 @@
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/flatstrap/dist/js/flatstrap.min.js"></script>
     <script type="text/javascript" src="bower_components/knockout/dist/knockout.js"></script>
-    <script type="text/javascript" src="bower_components/knockout-mapping/build/output/knockout.mapping-latest.js"></script>
+    <script type="text/javascript"
+            src="bower_components/knockout-mapping/build/output/knockout.mapping-latest.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
@@ -17,26 +18,63 @@
 
 
     <div class="col-md-12">
-        <h4>Search</h4>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#search" aria-controls="home" role="tab"
+                                                      data-toggle="tab">Search</a></li>
+            <li role="presentation"><a href="#addNewContainer" aria-controls="profile" role="tab"
+                                       data-toggle="tab">Add new container</a></li>
+        </ul>
 
-        <form action="">
-            <input type="text"/>
-        </form>
-        
-        <h4>Add container</h4>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane" id="search">
 
-        <form action="">
 
-        </form>
-        
+            </div>
+            <div role="tabpanel" class="tab-pane active" id="addNewContainer">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="country">Select country</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <select name="country" id="country" class="form-control">
+
+                            <option value="bg">Bulgaria</option>
+                            <option value="us">USA</option>
+
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <button id="addNewBtn" class="btn btn-success">
+                            Add container
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Coordinates</label>
+                    </div>
+
+                    <div class="col-md-12">Lang: <span id="lng"></span></div>
+                    <div class="col-md-12">Lat: <span id="lat"></span></div>
+
+
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
 </div>
-<div id="map">
-
-</div>
-
+<div id="map"></div>
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNO2IPYwX_xOe2Uy-Gz3vLW3y9wt23TzA&callback=initMap">
