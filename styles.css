@@ -2,11 +2,19 @@
     width: 20vw;
     height: 100vh;
     float: left;
-    background-color: #0583DA;
+    padding-top: 20px;
 }
 
 #map {
-    float: left;
+    float: right;
     height: 100vh;
     width: 80vw;
+}
+.tab-pane {
+    padding-top: 10px;
+}
+
+
+label {
+    margin-top: 10px;
 }
